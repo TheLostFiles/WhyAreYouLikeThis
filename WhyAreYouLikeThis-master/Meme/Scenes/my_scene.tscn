@@ -5,6 +5,10 @@
 [ext_resource path="res://UI Sprites/CMs8R8F - Imgur.png" type="Texture" id=3]
 [ext_resource path="res://Scripts/Test.gd" type="Script" id=4]
 
+
+
+
+
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 7.09894, 10.9404 )
 
@@ -12,14 +16,12 @@ extents = Vector2( 7.09894, 10.9404 )
 position = Vector2( 264.37, 747.446 )
 
 [node name="TileMap" type="TileMap" parent="."]
-scale = Vector2( 3, 3 )
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( -196590, 47, 0, 0, 1, 0, 1, 2, 0, 2, 2, 0, 3, 2, 0, 4, 2, 0, 5, 2, 0, 6, 2, 0, 7, 2, 0, 8, 3, 0, 9, 27, 0, 10, 27, 0, 11, 27, 0, 12, 27, 0, 65536, 4, 0, 65537, 5, 0, 65538, 5, 0, 65539, 5, 0, 65540, 5, 0, 65541, 5, 0, 65542, 5, 0, 65543, 5, 0, 65544, 6, 0, 65545, 27, 0, 65546, 27, 0, 65547, 27, 0, 65548, 27, 0, 65549, 27, 0, 131072, 7, 0, 131073, 8, 0, 131074, 8, 0, 131075, 8, 0, 131076, 8, 0, 131077, 8, 0, 131078, 8, 0, 131079, 8, 0, 131080, 9, 0, 131081, 27, 0, 131082, 27, 0, 131083, 27, 0, 131084, 27, 0, 131085, 27, 0, 131086, 27, 0, 196608, 27, 0, 196609, 27, 0, 196610, 27, 0, 196611, 27, 0, 196612, 27, 0, 196613, 27, 0, 196614, 27, 0, 196615, 27, 0, 196616, 27, 0, 196617, 27, 0, 196618, 27, 0, 196619, 27, 0, 196620, 27, 0, 196621, 27, 0, 196622, 27, 0, 262144, 27, 0, 262145, 27, 0, 262146, 27, 0, 262147, 27, 0, 262148, 27, 0, 262149, 27, 0, 262150, 27, 0, 262151, 27, 0, 262152, 27, 0, 262153, 27, 0, 262154, 27, 0, 262155, 27, 0, 262156, 27, 0, 262157, 27, 0, 262158, 27, 0 )
+tile_data = PoolIntArray( 0, 1, 0, 1, 2, 0, 2, 2, 0, 3, 2, 0, 4, 2, 0, 5, 2, 0, 6, 2, 0, 7, 2, 0, 8, 3, 0, 9, 27, 0, 10, 27, 0, 11, 27, 0, 12, 27, 0, 65536, 4, 0, 65537, 5, 0, 65538, 5, 0, 65539, 5, 0, 65540, 5, 0, 65541, 5, 0, 65542, 5, 0, 65543, 5, 0, 65544, 6, 0, 65545, 27, 0, 65546, 27, 0, 65547, 27, 0, 65548, 27, 0, 65549, 27, 0, 131072, 7, 0, 131073, 8, 0, 131074, 8, 0, 131075, 8, 0, 131076, 8, 0, 131077, 8, 0, 131078, 8, 0, 131079, 8, 0, 131080, 9, 0, 131081, 27, 0, 131082, 27, 0, 131083, 27, 0, 131084, 27, 0, 131085, 27, 0, 131086, 27, 0, 196608, 27, 0, 196609, 27, 0, 196610, 27, 0, 196611, 27, 0, 196612, 27, 0, 196613, 27, 0, 196614, 27, 0, 196615, 27, 0, 196616, 27, 0, 196617, 27, 0, 196618, 27, 0, 196619, 27, 0, 196620, 27, 0, 196621, 27, 0, 196622, 27, 0, 262144, 27, 0, 262145, 27, 0, 262146, 27, 0, 262147, 27, 0, 262148, 27, 0, 262149, 27, 0, 262150, 27, 0, 262151, 27, 0, 262152, 27, 0, 262153, 27, 0, 262154, 27, 0, 262155, 27, 0, 262156, 27, 0, 262157, 27, 0, 262158, 27, 0 )
 
 [node name="TileMap2" type="TileMap" parent="."]
-scale = Vector2( 3, 3 )
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 16, 16 )
 format = 1
@@ -28,25 +30,22 @@ tile_data = PoolIntArray( 65540, 47, 0, 65542, 33, 0, 131080, 47, 0, 131083, 47,
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
 [node name="Player" type="KinematicBody2D" parent="."]
-position = Vector2( 18.1169, -167.351 )
-scale = Vector2( 3, 3 )
-motion/sync_to_physics = true
 script = ExtResource( 2 )
-speed = 37.0
-tileSize = 16.0
+speed = 10.0
+tileSize = 32.0
 
 [node name="Sprite" type="Sprite" parent="Player"]
 
 [node name="CharacterSprite" type="Sprite" parent="Player/Sprite"]
-position = Vector2( 72.9187, 61.9564 )
+position = Vector2( 236.252, 188.623 )
 scale = Vector2( 0.51572, 0.51572 )
 texture = ExtResource( 3 )
 vframes = 4
 hframes = 4
-frame = 8
+frame = 12
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2( 84.3267, 51.7544 )
+position = Vector2( 247.66, 178.421 )
 current = true
 drag_margin_left = 0.0
 drag_margin_top = 0.0
@@ -56,12 +55,12 @@ editor_draw_limits = true
 editor_draw_drag_margin = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-position = Vector2( 73.2737, 63.2214 )
+position = Vector2( 236.607, 189.888 )
 shape = SubResource( 1 )
 
 [node name="UI" type="ParallaxBackground" parent="Player"]
 layer = 1
-scroll_offset = Vector2( -23.467, -435.359 )
+scroll_offset = Vector2( -0.0300293, -625.867 )
 
 [node name="Button" type="Button" parent="Player/UI"]
 margin_left = 43.8378
