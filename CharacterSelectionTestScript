@@ -1,0 +1,37 @@
+extends Button
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = "text"
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+var Jester = preload("res://J Attack Bar.png")
+var Bird = preload("res://BP Attack Bar.png")
+var Dragon = preload("res://DB Attck Bar.png")
+var JesterP = preload("res://pc jester sprite walk cycle profile-Sheet.png")
+var BirdP = preload("res://pc birdperson-Sheet.png")
+var DragonP = preload("res://pc dragon sprite-Sheet.png")
+onready var Test_sprite = get_node("../Test")
+onready var Player_spriteB = get_node("../Bird2")
+onready var Player_spriteJ = get_node("../Jester2")
+onready var Player_spriteD = get_node("../Dragon2")
+
+func _on_Button4_pressed():
+	Test_sprite.set_texture(Jester)
+	Player_spriteJ.set_texture(JesterP)
+
+
+func _on_Button3_pressed():
+	Test_sprite.set_texture(Bird)
+	Player_spriteB.set_texture(BirdP)
+
+
+func _on_Button2_pressed():
+	Test_sprite.set_texture(Dragon)
+	Player_spriteD.set_texture(DragonP)
